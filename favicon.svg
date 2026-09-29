@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo circular verde corporativo -->
+  <circle cx="50" cy="50" r="50" fill="#002D2A"/>
+  <!-- LU en dorado, tamaño máximo -->
+  <text
+    x="50"
+    y="67"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="56"
+    font-weight="600"
+    fill="#C4871C"
+    letter-spacing="-1">LU</text>
+</svg>
