@@ -209,11 +209,10 @@ a    { text-decoration: none; color: inherit; }
     position: absolute;
     inset: 0;
     background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.88) 0%,
-        rgba(255, 255, 255, 0.70) 25%,
-        rgba(255, 255, 255, 0.30) 50%,
-        transparent 72%
+        to top,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.35) 55%,
+        rgba(0, 0, 0, 0.15) 100%
     );
     z-index: 1;
 }
@@ -234,8 +233,7 @@ a    { text-decoration: none; color: inherit; }
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 4px;
-    color: var(--color-text);
-    opacity: 0.55;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -244,7 +242,7 @@ a    { text-decoration: none; color: inherit; }
     font-family: var(--font-title);
     font-size: 5.5rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-white);
     line-height: 1.0;
     margin-bottom: 22px;
 }
@@ -260,9 +258,8 @@ a    { text-decoration: none; color: inherit; }
     font-family: var(--font-text);
     font-size: 0.95rem;
     font-weight: 400;
-    color: var(--color-text);
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.75;
-    opacity: 0.8;
 }
 
 /* ============================================
@@ -470,7 +467,7 @@ a    { text-decoration: none; color: inherit; }
     position: relative;
     margin-top: 60px; /* Separación y aire con respecto a la sección anterior */
     min-height: 220px; /* Grosor reducido ajustado a lo escrito */
-    background-image: url('../img/cierre.jpg');
+    background-image: url('../img/cierre.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -652,15 +649,6 @@ a    { text-decoration: none; color: inherit; }
     .enfoque-title      { font-size: 2.2rem; }
     .enfoque-right      { padding: 48px; }
     .cierre-title       { font-size: 3.2rem; }
-    .hero-gradient {
-        background: linear-gradient(
-            to right,
-            rgba(255,255,255,0.88) 0%,
-            rgba(255,255,255,0.72) 32%,
-            rgba(255,255,255,0.35) 52%,
-            transparent 78%
-        );
-    }
 }
 
 @media (max-width: 768px) {
@@ -672,19 +660,6 @@ a    { text-decoration: none; color: inherit; }
 
     /* Hero — fundido hacia abajo en móvil */
     .hero           { min-height: 520px; align-items: flex-end; }
-    .hero-gradient  {
-        background: linear-gradient(
-            to bottom,
-            rgba(245, 241, 234, 0.25) 0%,
-            rgba(245, 241, 234, 0.42) 35%,
-            rgba(23, 23, 21, 0.60) 80%,
-            rgba(23, 23, 21, 0.75) 100%
-        );
-    }
-    /* En mobile el texto va sobre fondo oscuro, ajustamos colores */
-    .hero-label  { color: var(--color-text); opacity: 0.6; font-weight: 700; letter-spacing: 4px; }
-    .hero-title  { color: var(--color-primary); text-shadow: 0 1px 8px rgba(255,255,255,0.3); }
-    .hero-sub    { color: rgba(255, 255, 255, 0.85); opacity: 1; }
     .hero-content   { padding: 60px 24px; }
     .hero-title     { font-size: 3.8rem; }
 
