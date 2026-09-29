@@ -156,7 +156,7 @@
                 '<p class="lu-cb-body">' +
                     'Este sitio utiliza cookies técnicas propias y, con tu consentimiento, de análisis. ' +
                     'Puedes aceptarlas todas o continuar solo con las esenciales. ' +
-                    '<a href="cookies.html">Política de cookies</a>.' +
+                    '<a href="/cookies">Política de cookies</a>.' +
                 '</p>' +
             '</div>' +
             '<div class="lu-cb-actions">' +

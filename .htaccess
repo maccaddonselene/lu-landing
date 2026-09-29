@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Si la petición es para una ruta que no es un directorio ni un archivo real
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Redirige silenciosamente a .html
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
